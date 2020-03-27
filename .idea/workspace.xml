@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="686eefa6-2672-4675-963b-08cf129de9c6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZhlkHTVlEFvReFYceKZh8gogeZ" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ui" />
+      <recent name="repository" />
+      <recent name="service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ui" />
+      <recent name="utils" />
+      <recent name="domain" />
+      <recent name="service" />
+      <recent name="repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AccountAcceptance">
+    <configuration name="AccountAcceptance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AccountAcceptance" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountAcceptance.print_all_transaction_statements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AccountAcceptance" />
+      <option name="METHOD_NAME" value="print_all_transaction_statements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.AccountServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrinterStatementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.PrinterStatementTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrinterStatementTest.prints_header" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.PrinterStatementTest" />
+      <option name="METHOD_NAME" value="prints_header" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountAcceptance" />
+        <item itemvalue="JUnit.PrinterStatementTest" />
+        <item itemvalue="JUnit.PrinterStatementTest.prints_header" />
+        <item itemvalue="JUnit.AccountAcceptance.print_all_transaction_statements" />
+        <item itemvalue="JUnit.AccountServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="686eefa6-2672-4675-963b-08cf129de9c6" name="Default Changelist" comment="" />
+      <created>1585299347820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585299347820</updated>
+      <workItem from="1585299350687" duration="4033000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="768" y="241" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1585302332417">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state x="768" y="241" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302332417" />
+    <state width="1920" height="249" key="GridCell.Tab.0.bottom" timestamp="1585303809566">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state width="1920" height="249" key="GridCell.Tab.0.bottom/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809566" />
+    <state width="1920" height="249" key="GridCell.Tab.0.center" timestamp="1585303809565">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state width="1920" height="249" key="GridCell.Tab.0.center/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809565" />
+    <state width="1920" height="249" key="GridCell.Tab.0.left" timestamp="1585303809565">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state width="1920" height="249" key="GridCell.Tab.0.left/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809565" />
+    <state width="1920" height="249" key="GridCell.Tab.0.right" timestamp="1585303809565">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state width="1920" height="249" key="GridCell.Tab.0.right/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809565" />
+    <state x="766" y="459" width="377" height="133" key="ReplaceDuplicatesPrompt" timestamp="1585302601625">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state x="766" y="459" width="377" height="133" key="ReplaceDuplicatesPrompt/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302601625" />
+    <state x="734" y="254" width="442" height="542" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585302946976">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state x="734" y="254" width="442" height="542" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302946976" />
+    <state x="360" y="293" width="568" height="507" key="extract.method.dialog" timestamp="1585303695687">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state x="360" y="293" width="568" height="507" key="extract.method.dialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303695687" />
+    <state x="705" y="141" width="500" height="769" key="refactoring.ChangeSignatureDialog" timestamp="1585302882547">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state x="705" y="141" width="500" height="769" key="refactoring.ChangeSignatureDialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302882547" />
+    <state x="827" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585301796799">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state x="827" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585301796799" />
+  </component>
+</project>
