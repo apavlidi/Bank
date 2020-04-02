@@ -1,27 +1,51 @@
 package service;
 
-import repository.TransactionRepository;
-import ui.PrinterStatement;
+import static java.util.Collections.reverse;
+
+import java.util.ArrayList;
+import java.util.List;
+import ui.Console;
 
 public class AccountService {
 
-  private TransactionRepository transactionRepository;
-  private PrinterStatement printerStatement;
+  private Console console;
+  private Clock clock;
+  private List<String> transactions;
+  private int balance;
 
-  public AccountService(TransactionRepository transactionRepository, PrinterStatement printerStatement) {
-    this.transactionRepository = transactionRepository;
-    this.printerStatement = printerStatement;
+  public AccountService(Console console, Clock clock) {
+    this.console = console;
+    this.clock = clock;
+    transactions = new ArrayList<>();
   }
 
   public void deposit(int amount) {
-    transactionRepository.addDeposit(amount);
+    balance += amount;
+    persist(amount);
   }
 
   public void withdraw(int amount) {
-    transactionRepository.addWithdraw(amount);
+    balance -= amount;
+    persist(-amount);
+  }
+
+  private void persist(int amount) {
+    transactions.add(clock.getCurrentDate() + " || " + amount + "   || " + balance + "\n");
   }
 
   public void printStatement() {
-    printerStatement.print(transactionRepository.getAll());
+    printHeader();
+    printAllTransactions();
   }
+
+  private void printAllTransactions() {
+    List<String> transactionsCopy = new ArrayList<>(transactions);
+    reverse(transactionsCopy);
+    transactionsCopy.forEach(console::print);
+  }
+
+  private void printHeader() {
+    console.print("Date       || Amount || Balance\n");
+  }
+
 }

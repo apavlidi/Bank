@@ -4,18 +4,14 @@ import static org.mockito.Mockito.verify;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InOrder;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import repository.TransactionRepository;
 import service.AccountService;
+import service.Clock;
 import ui.Console;
-import ui.PrinterStatement;
-import utils.Clock;
 
 @ExtendWith(MockitoExtension.class)
-public class AccountAcceptance {
+public class AccountServiceAcceptanceTests {
 
   @Mock
   private Console console;
@@ -24,9 +20,9 @@ public class AccountAcceptance {
   private Clock clock;
 
   @Test
-  public void print_all_transaction_statements() {
+  public void print_all_statements() {
     given(clock.getCurrentDate()).willReturn("10/01/2012", "13/01/2012", "14/01/2012");
-    AccountService accountService = new AccountService(new TransactionRepository(clock), new PrinterStatement(console));
+    AccountService accountService = new AccountService(console, clock);
 
     accountService.deposit(1000);
     accountService.deposit(2000);
@@ -34,10 +30,10 @@ public class AccountAcceptance {
 
     accountService.printStatement();
 
-    InOrder inOrder = Mockito.inOrder(console);
-    inOrder.verify(console).print("Date       || Amount || Balance\n");
-    inOrder.verify(console).print("14/01/2012 || -500   || 2500\n");
-    inOrder.verify(console).print("13/01/2012 || 2000   || 3000\n");
-    inOrder.verify(console).print("10/01/2012 || 1000   || 1000\n");
+    verify(console).print("Date       || Amount || Balance\n");
+    verify(console).print("14/01/2012 || -500   || 2500\n");
+    verify(console).print("13/01/2012 || 2000   || 3000\n");
+    verify(console).print("10/01/2012 || 1000   || 1000\n");
   }
+
 }

@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="686eefa6-2672-4675-963b-08cf129de9c6" name="Default Changelist" comment="" />
+    <list default="true" id="686eefa6-2672-4675-963b-08cf129de9c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/Clock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TransactionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/PrinterStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Clock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AccountAcceptance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/TransactionRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/AccountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/AccountServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/PrinterStatementTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Transaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/TransactionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/PrinterStatement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Clock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AccountAcceptance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/TransactionRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/AccountServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/AccountServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ui/PrinterStatementTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +32,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="bankSession" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -23,6 +53,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZhlkHTVlEFvReFYceKZh8gogeZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,6 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -39,36 +71,39 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="service" />
       <recent name="ui" />
       <recent name="repository" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="service" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="ui" />
       <recent name="utils" />
       <recent name="domain" />
+      <recent name="ui" />
       <recent name="service" />
       <recent name="repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountAcceptance">
-    <configuration name="AccountAcceptance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccountServiceTest.add_two_deposit_transaction">
+    <configuration name="AccountServiceAcceptanceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Bank" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountAcceptance" />
+      <option name="MAIN_CLASS_NAME" value="AccountServiceAcceptanceTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountAcceptance.print_all_transaction_statements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountServiceAcceptanceTests.print_all_statements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Bank" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountAcceptance" />
-      <option name="METHOD_NAME" value="print_all_transaction_statements" />
+      <option name="MAIN_CLASS_NAME" value="AccountServiceAcceptanceTests" />
+      <option name="METHOD_NAME" value="print_all_statements" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,32 +124,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrinterStatementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountServiceTest.add_a_deposit_transaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Bank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.PrinterStatementTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.AccountServiceTest" />
+      <option name="METHOD_NAME" value="add_a_deposit_transaction" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrinterStatementTest.prints_header" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountServiceTest.add_two_deposit_transaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Bank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.PrinterStatementTest" />
-      <option name="METHOD_NAME" value="prints_header" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.AccountServiceTest" />
+      <option name="METHOD_NAME" value="add_two_deposit_transaction" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountAcceptance" />
-        <item itemvalue="JUnit.PrinterStatementTest" />
-        <item itemvalue="JUnit.PrinterStatementTest.prints_header" />
-        <item itemvalue="JUnit.AccountAcceptance.print_all_transaction_statements" />
+        <item itemvalue="JUnit.AccountServiceTest.add_two_deposit_transaction" />
         <item itemvalue="JUnit.AccountServiceTest" />
+        <item itemvalue="JUnit.AccountServiceAcceptanceTests.print_all_statements" />
+        <item itemvalue="JUnit.AccountServiceAcceptanceTests" />
+        <item itemvalue="JUnit.AccountServiceTest.add_a_deposit_transaction" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +177,14 @@
       <option name="presentableId" value="Default" />
       <updated>1585299347820</updated>
       <workItem from="1585299350687" duration="4033000" />
+      <workItem from="1585310731289" duration="5223000" />
+      <workItem from="1585319621216" duration="950000" />
+      <workItem from="1585390938440" duration="520000" />
+      <workItem from="1585414252133" duration="10000" />
+      <workItem from="1585429821787" duration="891000" />
+      <workItem from="1585476265213" duration="14000" />
+      <workItem from="1585479407822" duration="2000" />
+      <workItem from="1585552844493" duration="10000" />
     </task>
     <servers />
   </component>
@@ -148,45 +192,57 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="768" y="241" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1585302332417">
+    <state x="100" y="100" width="1720" height="844" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585313322582">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state x="768" y="241" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302332417" />
-    <state width="1920" height="249" key="GridCell.Tab.0.bottom" timestamp="1585303809566">
+    <state x="100" y="100" width="1720" height="844" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585313322582" />
+    <state x="768" y="241" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1585311524045">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state width="1920" height="249" key="GridCell.Tab.0.bottom/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809566" />
-    <state width="1920" height="249" key="GridCell.Tab.0.center" timestamp="1585303809565">
+    <state x="768" y="241" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585311524045" />
+    <state x="713" y="382" width="494" height="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585312388988">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state width="1920" height="249" key="GridCell.Tab.0.center/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809565" />
-    <state width="1920" height="249" key="GridCell.Tab.0.left" timestamp="1585303809565">
+    <state x="713" y="382" width="494" height="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585312388988" />
+    <state x="693" y="271" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585312276485">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state width="1920" height="249" key="GridCell.Tab.0.left/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809565" />
-    <state width="1920" height="249" key="GridCell.Tab.0.right" timestamp="1585303809565">
+    <state x="693" y="271" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585312276485" />
+    <state width="1317" height="248" key="GridCell.Tab.0.bottom" timestamp="1585391457234">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state width="1920" height="249" key="GridCell.Tab.0.right/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809565" />
-    <state x="766" y="459" width="377" height="133" key="ReplaceDuplicatesPrompt" timestamp="1585302601625">
+    <state width="1317" height="248" key="GridCell.Tab.0.bottom/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585391457234" />
+    <state width="1317" height="248" key="GridCell.Tab.0.center" timestamp="1585391457234">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state x="766" y="459" width="377" height="133" key="ReplaceDuplicatesPrompt/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302601625" />
-    <state x="734" y="254" width="442" height="542" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585302946976">
+    <state width="1317" height="248" key="GridCell.Tab.0.center/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585391457234" />
+    <state width="1317" height="248" key="GridCell.Tab.0.left" timestamp="1585391457234">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state x="734" y="254" width="442" height="542" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302946976" />
-    <state x="360" y="293" width="568" height="507" key="extract.method.dialog" timestamp="1585303695687">
+    <state width="1317" height="248" key="GridCell.Tab.0.left/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585391457234" />
+    <state width="1317" height="248" key="GridCell.Tab.0.right" timestamp="1585391457234">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state x="360" y="293" width="568" height="507" key="extract.method.dialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303695687" />
-    <state x="705" y="141" width="500" height="769" key="refactoring.ChangeSignatureDialog" timestamp="1585302882547">
+    <state width="1317" height="248" key="GridCell.Tab.0.right/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585391457234" />
+    <state x="766" y="459" width="387" height="133" key="ReplaceDuplicatesPrompt" timestamp="1585314563784">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state x="705" y="141" width="500" height="769" key="refactoring.ChangeSignatureDialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302882547" />
-    <state x="827" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585301796799">
+    <state x="766" y="459" width="387" height="133" key="ReplaceDuplicatesPrompt/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585314563784" />
+    <state x="734" y="254" width="442" height="542" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585311318574">
       <screen x="0" y="0" width="1920" height="988" />
     </state>
-    <state x="827" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585301796799" />
+    <state x="734" y="254" width="442" height="542" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585311318574" />
+    <state x="360" y="293" width="568" height="507" key="extract.method.dialog" timestamp="1585314562111">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state x="360" y="293" width="568" height="507" key="extract.method.dialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585314562111" />
+    <state x="705" y="141" width="500" height="769" key="refactoring.ChangeSignatureDialog" timestamp="1585312506799">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state x="705" y="141" width="500" height="769" key="refactoring.ChangeSignatureDialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585312506799" />
+    <state x="827" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585320451270">
+      <screen x="0" y="0" width="1920" height="988" />
+    </state>
+    <state x="827" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585320451270" />
   </component>
 </project>
