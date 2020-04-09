@@ -22,4 +22,5 @@ public class RedisConnectionSingleton {
         RedisConstants.PASSWORD, RedisConstants.SSL);
     return jedisPool.getResource();
   }
+
 }

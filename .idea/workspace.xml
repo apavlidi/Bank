@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="686eefa6-2672-4675-963b-08cf129de9c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/RedisConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/TransactionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/infrastructure/redis/RedisConnectionSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/infrastructure/redis/RedisTransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/infrastructure/RedisTransactionRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/infrastructure/redis/RedisJsonSeriliazationException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/awesomeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/awesomeClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infrastructure/kafka/KafkaTransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/kafka/KafkaTransactionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infrastructure/kafka/ProducerSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/kafka/ProducerSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/infrastructure/KafkaTransactionRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/infrastructure/KafkaTransactionRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/repository/TransactionRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infrastructure/redis/RedisConnectionSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/redis/RedisConnectionSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infrastructure/redis/RedisTransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/redis/RedisTransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/infrastructure/RedisTransactionRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/infrastructure/RedisTransactionRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/domain/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/TransactionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TransactionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/PrinterStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/PrinterStatement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AccountAcceptance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AccountAcceptance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/AccountServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/AccountServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/infrastructure/redis/RedisTransactionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/infrastructure/redis/RedisTransactionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/infrastructure/RedisTransactionRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/infrastructure/RedisTransactionRepositoryTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,16 +58,6 @@
       <recent name="repository" />
       <recent name="service" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ui" />
-      <recent name="utils" />
-      <recent name="domain" />
-      <recent name="service" />
-      <recent name="repository" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="config" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -84,6 +65,16 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="config" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="infrastructure.redis" />
+      <recent name="ui" />
+      <recent name="utils" />
+      <recent name="domain" />
+      <recent name="service" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.RedisTransactionRepositoryTest">
@@ -113,22 +104,6 @@
       <option name="PACKAGE_NAME" value="infrastructure" />
       <option name="MAIN_CLASS_NAME" value="infrastructure.RedisTransactionRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTransactionRepositoryTest.addDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Bank" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="infrastructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="infrastructure" />
-      <option name="MAIN_CLASS_NAME" value="infrastructure.RedisTransactionRepositoryTest" />
-      <option name="METHOD_NAME" value="addDeposit(int)" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,13 +140,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedisTransactionRepositoryTest.get_all_transactions_from_redis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="infrastructure.RedisTransactionRepositoryTest" />
+      <option name="METHOD_NAME" value="get_all_transactions_from_redis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RedisTransactionRepositoryTest" />
-        <item itemvalue="JUnit.RedisTransactionRepositoryTest.add_withdraw_transaction_to_redis" />
+        <item itemvalue="JUnit.RedisTransactionRepositoryTest.get_all_transactions_from_redis" />
         <item itemvalue="JUnit.RedisTransactionRepositoryTest.add_deposit_transaction_to_redis" />
+        <item itemvalue="JUnit.RedisTransactionRepositoryTest.add_withdraw_transaction_to_redis" />
         <item itemvalue="JUnit.KafkaTransactionRepositoryTest" />
-        <item itemvalue="JUnit.RedisTransactionRepositoryTest.addDeposit" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +178,7 @@
       <updated>1585299347820</updated>
       <workItem from="1585299350687" duration="4033000" />
       <workItem from="1586418419276" duration="78000" />
+      <workItem from="1586437541104" duration="2732000" />
     </task>
     <servers />
   </component>
@@ -198,30 +190,30 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="100" y="100" width="1720" height="844" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586426030880" />
-    <state x="768" y="255" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1586427403121">
+    <state x="768" y="255" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1586437875410">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="768" y="255" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586427403121" />
+    <state x="768" y="255" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586437875410" />
     <state x="768" y="241" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302332417" />
-    <state width="1874" height="266" key="GridCell.Tab.0.bottom" timestamp="1586428690230">
+    <state width="1874" height="284" key="GridCell.Tab.0.bottom" timestamp="1586439935694">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586428690230" />
+    <state width="1874" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586439935694" />
     <state width="1920" height="249" key="GridCell.Tab.0.bottom/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809566" />
-    <state width="1874" height="266" key="GridCell.Tab.0.center" timestamp="1586428690230">
+    <state width="1874" height="284" key="GridCell.Tab.0.center" timestamp="1586439935694">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="266" key="GridCell.Tab.0.center/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586428690230" />
+    <state width="1874" height="284" key="GridCell.Tab.0.center/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586439935694" />
     <state width="1920" height="249" key="GridCell.Tab.0.center/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809565" />
-    <state width="1874" height="266" key="GridCell.Tab.0.left" timestamp="1586428690230">
+    <state width="1874" height="284" key="GridCell.Tab.0.left" timestamp="1586439935694">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="266" key="GridCell.Tab.0.left/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586428690230" />
+    <state width="1874" height="284" key="GridCell.Tab.0.left/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586439935694" />
     <state width="1920" height="249" key="GridCell.Tab.0.left/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809565" />
-    <state width="1874" height="266" key="GridCell.Tab.0.right" timestamp="1586428690230">
+    <state width="1874" height="284" key="GridCell.Tab.0.right" timestamp="1586439935694">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="266" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586428690230" />
+    <state width="1874" height="284" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586439935694" />
     <state width="1920" height="249" key="GridCell.Tab.0.right/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585303809565" />
     <state x="766" y="485" width="387" height="141" key="ReplaceDuplicatesPrompt" timestamp="1586428208183">
       <screen x="0" y="0" width="1920" height="1044" />
@@ -246,10 +238,15 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="651" y="263" width="618" height="518" key="find.popup/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586424842219" />
-    <state x="705" y="141" width="500" height="769" key="refactoring.ChangeSignatureDialog" timestamp="1585302882547">
-      <screen x="0" y="0" width="1920" height="988" />
+    <state x="705" y="149" width="500" height="769" key="refactoring.ChangeSignatureDialog" timestamp="1586436053388">
+      <screen x="0" y="0" width="1920" height="1044" />
     </state>
+    <state x="705" y="149" key="refactoring.ChangeSignatureDialog/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586436053388" />
     <state x="705" y="141" width="500" height="769" key="refactoring.ChangeSignatureDialog/0.0.1920.988/1920.0.1280.1024@0.0.1920.988" timestamp="1585302882547" />
+    <state x="624" y="236" key="run.anything.popup" timestamp="1586436109445">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="624" y="236" key="run.anything.popup/0.0.1920.1044/1920.0.1280.1024@0.0.1920.1044" timestamp="1586436109445" />
     <state x="827" y="272" width="672" height="717" key="search.everywhere.popup" timestamp="1586424864912">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>

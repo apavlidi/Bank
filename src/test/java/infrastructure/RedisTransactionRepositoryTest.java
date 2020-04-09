@@ -1,14 +1,21 @@
 package infrastructure;
 
+import static infrastructure.redis.RedisTransactionRepository.transactionKey;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import domain.Transaction;
 import domain.TransactionFactory;
 import infrastructure.redis.RedisConnectionSingleton;
 import infrastructure.redis.RedisTransactionRepository;
+import java.io.IOException;
+import java.io.Serializable;
+import java.util.Arrays;
 import java.util.List;
+import org.apache.commons.lang3.SerializationUtils;
+import org.apache.kafka.common.utils.Bytes;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -42,13 +49,13 @@ public class RedisTransactionRepositoryTest {
 
   @AfterAll
   static void tearDown() {
-    // TODO DELETE EVERY ENTRY
+    RedisConnectionSingleton.getInstance().del(transactionKey);
     redis.disconnect();
     redis.close();
   }
 
   @Test
-  public void add_deposit_transaction_to_redis() {
+  public void add_deposit_transaction_to_redis() throws IOException {
     int amount = 100;
     Transaction transaction = new Transaction(1, TODAY, amount);
     given(transactionFactory.create(TODAY, amount)).willReturn(transaction);
@@ -56,11 +63,10 @@ public class RedisTransactionRepositoryTest {
     redisTransactionRepository.addDeposit(amount);
 
     assertRedisValue(transaction);
-    clearEntry(transaction.id);
   }
 
   @Test
-  public void add_withdraw_transaction_to_redis() {
+  public void add_withdraw_transaction_to_redis() throws IOException {
     int amount = 100;
     Transaction transaction = new Transaction(1, TODAY, -amount);
     given(transactionFactory.create(TODAY, -amount)).willReturn(transaction);
@@ -68,30 +74,28 @@ public class RedisTransactionRepositoryTest {
     redisTransactionRepository.addWithdraw(amount);
 
     assertRedisValue(transaction);
-    clearEntry(transaction.id);
   }
 
   @Test
-  public void get_all_transactions_from_redis() {
+  public void get_all_transactions_from_redis() throws IOException {
     int amount = 100;
     Transaction transaction = new Transaction(1, TODAY, -amount);
     given(transactionFactory.create(TODAY, -amount)).willReturn(transaction);
 
     redisTransactionRepository.addWithdraw(amount);
-    List<Transaction> all = redisTransactionRepository.getAll();
+    List<Transaction> receivedTransactions = redisTransactionRepository.getAll();
 
-    assertRedisValue(transaction);
-    clearEntry(transaction.id);
+    for (Transaction receivedTransaction : receivedTransactions) {
+      assertRedisValue(receivedTransaction);
+    }
   }
 
-  private void assertRedisValue(Transaction transaction) {
-    String redisValue = redis.hget(RedisTransactionRepository.transactionKey, String.valueOf(transaction.id));
-    assertEquals(transaction.date + " || " + transaction.amount, redisValue);
+  private void assertRedisValue(Transaction transaction) throws IOException {
+    String transactionJson = RedisConnectionSingleton.getInstance().hget(transactionKey, String.valueOf(transaction.id));
+    Transaction retrievedTransaction = Transaction.createFromJson(transactionJson);
+    assertEquals(retrievedTransaction.date, transaction.date);
+    assertEquals(retrievedTransaction.amount, transaction.amount);
+    assertEquals(retrievedTransaction.id, transaction.id);
   }
-
-  private void clearEntry(int id) {
-    RedisConnectionSingleton.getInstance().del(RedisTransactionRepository.transactionKey);
-  }
-
 
 }
