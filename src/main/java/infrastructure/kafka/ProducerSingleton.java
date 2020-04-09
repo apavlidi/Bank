@@ -26,4 +26,5 @@ public class ProducerSingleton {
     props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
     return new KafkaProducer<>(props);
   }
+
 }

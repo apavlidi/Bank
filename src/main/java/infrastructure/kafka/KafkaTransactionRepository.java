@@ -20,6 +20,7 @@ public class KafkaTransactionRepository implements TransactionRepository {
 
   private Clock clock;
 
+  //TODO Try injecting singleton to constructor
   public KafkaTransactionRepository(Clock clock) {
     this.clock = clock;
   }

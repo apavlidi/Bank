@@ -13,6 +13,7 @@ import java.util.List;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.junit.AfterClass;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -23,14 +24,13 @@ import utils.Clock;
 @ExtendWith(MockitoExtension.class)
 class KafkaTransactionRepositoryTest {
 
-  private static final int MAX_NO_MESSAGE_FOUND_COUNT = 100;
   public static final String TODAY = "10/10/2020";
 
   @Mock
   private Clock clock;
 
   private KafkaTransactionRepository kafkaTransactionRepository;
-  private Consumer<Long, String> consumer;
+  private static Consumer<Long, String> consumer;
 
   @BeforeEach
   void setUp() {
@@ -39,8 +39,8 @@ class KafkaTransactionRepositoryTest {
     given(clock.getCurrentDate()).willReturn(TODAY);
   }
 
-  @AfterClass
-  void tearDown() {
+  @AfterAll
+  static void tearDown() {
     consumer.close();
   }
 
