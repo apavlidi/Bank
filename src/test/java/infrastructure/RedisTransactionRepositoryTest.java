@@ -2,20 +2,14 @@ package infrastructure;
 
 import static infrastructure.redis.RedisTransactionRepository.transactionKey;
 import static org.junit.Assert.assertEquals;
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import domain.Transaction;
 import domain.TransactionFactory;
 import infrastructure.redis.RedisConnectionSingleton;
 import infrastructure.redis.RedisTransactionRepository;
 import java.io.IOException;
-import java.io.Serializable;
-import java.util.Arrays;
 import java.util.List;
-import org.apache.commons.lang3.SerializationUtils;
-import org.apache.kafka.common.utils.Bytes;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
